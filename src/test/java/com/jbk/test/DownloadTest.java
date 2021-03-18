@@ -55,21 +55,18 @@ public class DownloadTest extends ApplyListeners {
 	public void validatingSeleniumSoftware() {
 		Assert.assertTrue(downloadsPage.validedSelenium());
 	}
+	
 	@Test(priority=6)
-	public void validatingGoogleSoftware() {
-		//Assert.assertTrue(downloadsPage.validedGoogleChrome());
-	}
-	@Test(priority=7)
 	public void validatingVendorSize() {
 		Assert.assertTrue(downloadsPage.validedVendorSize());
 	}
-	@Test(priority=8)
+	@Test(priority=7)
 	public void validatingOfficialSourceLinkSize() {
 		Assert.assertTrue(downloadsPage.validedOfficialSourceSize());
 	}
 	
 	
-	@Test(priority=9)
+	@Test(priority=8)
 	public void validatingOracleSite() {
 		Assert.assertTrue(downloadsPage.validatingOracleSiteTitle());
 	}
