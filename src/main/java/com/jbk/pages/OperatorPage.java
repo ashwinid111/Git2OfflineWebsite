@@ -17,11 +17,6 @@ public class OperatorPage extends operatoPageObjectsRepository {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-
-	public void clickOperator() {
-		operatorPage.click();
-	}
-
 	public boolean checkTitle() {
 		String actualMsg = driver.getTitle();
 		String expectedMsg = "JavaByKiran | Operators";
